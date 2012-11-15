@@ -1,0 +1,8 @@
+﻿body.Printpage{margin:0mm 0mm 0mm 0mm;background-color: White;}
+
+.SolidDivPrint
+{
+    width: 172mm;
+    border: solid 1px #CCC;
+}
+

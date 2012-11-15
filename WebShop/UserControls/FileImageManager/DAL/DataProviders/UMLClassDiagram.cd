@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Factory pattern:&#xD;&#xA;&#xD;&#xA;- ImageManager has a general ItemDataProvider (ie the interface IItemDataProvider)&#xD;&#xA;&#xD;&#xA;- The provider can be one of the following types ProductDataProvider, CategoryDataProvider etc, which implements the interface IItemDataProvider.&#xD;&#xA;&#xD;&#xA;- Every ItemDataProvider (such as ProductDataProvider, CategoryDataProvider etc) defines its own way to make custom CRUD operations to its underlying tables. &#xD;&#xA;For example, ProductDataProvider has ProductFile table on which it manipulates data to and CategoryDataProvider has CategoryFile table etc.&#xD;&#xA;&#xA;&#xD;&#xA;-The FileHelper consists of methods that do IO operations to the physical files&#xD;&#xA;&#xD;&#xA;- FileData includes general methods that makes CRUD operations on the File table which is the same for all ItemDataProviders">
+    <Position X="1.146" Y="3.792" Height="2.5" Width="4.95" />
+  </Comment>
+  <Class Name="WebShop.UserControls.FileImageManager.DAL.DataProviders.ProductDataProvider">
+    <Position X="7.75" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAggAAgAAAAgACAAAAAAAAAggBCAAABAAAAAAAAA=</HashCode>
+      <FileName>UserControls\FileImageManager\DAL\DataProviders\ProductDataProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WebShop.UserControls.FileImageManager.DAL.FileData" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAEAAAAAAAAEAAgAAABAEAAAAAAAA=</HashCode>
+      <FileName>UserControls\FileImageManager\DAL\FileData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebShop.UserControls.FileImageManager.BLL.FileHelper" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQBBABIAAAAACKAAABAgAAAAAAAAIAAECAQAAgAk=</HashCode>
+      <FileName>UserControls\FileImageManager\BLL\FileHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebShop.UserControls.FileImageManager.ImageManager" Collapsed="true">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <AssociationLine Name="Provider" Type="WebShop.UserControls.FileImageManager.DAL.DataProviders.IItemDataProvider" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="1.565" />
+        <Point X="2.875" Y="1.565" />
+        <Point X="2.875" Y="1.813" />
+        <Point X="4" Y="1.813" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BVFCAB1AAYQkQAAkiAAAKEEQMAMIhEgBAEQkCAI6Mgg=</HashCode>
+      <FileName>UserControls\FileImageManager\ImageManager.ascx.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Provider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WebShop.UserControls.FileImageManager.DAL.Factory.ItemDataProviderFactory" Collapsed="true">
+    <Position X="4" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\FileImageManager\DAL\Factory\ItemDataProviderFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WebShop.UserControls.FileImageManager.DAL.DataProviders.IItemDataProvider" Collapsed="true">
+    <Position X="4" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAggAAgAAAAAACAAAAAAAAAggBCAAABAAAAAAAAA=</HashCode>
+      <FileName>UserControls\FileImageManager\DAL\DataProviders\IItemDataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

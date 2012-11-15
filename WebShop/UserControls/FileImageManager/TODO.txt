@@ -1,0 +1,2 @@
+﻿1. Ersätt QueryString med ViewState istället
+2. 

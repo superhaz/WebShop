@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63E55042-325D-417A-8B7D-EE80AD4A3550}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebShop</RootNamespace>
+    <AssemblyName>WebShop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.2.2.1.4\lib\net40-Full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web">
+      <HintPath>..\packages\Ninject.Web.2.2.0.4\lib\net40-Full\Ninject.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\WebForm1.aspx" />
+    <Content Include="App_Themes\Standard\images\Bank-48.png" />
+    <Content Include="App_Themes\Standard\images\Invoice-48.png" />
+    <Content Include="App_Themes\Standard\images\logo_new1.PNG" />
+    <Content Include="App_Themes\Standard\images\logo_new_b.PNG" />
+    <Content Include="App_Themes\Standard\images\Retail-Shop-48.png" />
+    <Content Include="App_Themes\Standard\Tabs.css" />
+    <Content Include="Conditions.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Faq.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="scripts\jquery.hotkeys.js" />
+    <Content Include="scripts\TabScript.js" />
+    <Content Include="scripts\UtilityScript.js" />
+    <Content Include="temp\WebForm2.aspx" />
+    <Content Include="temp\WebForm3.aspx" />
+    <Content Include="temp\WebForm4.aspx" />
+    <Content Include="temp\WebForm5.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserInformation.aspx.cs">
+      <DependentUpon>UserInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserInformation.aspx.designer.cs">
+      <DependentUpon>UserInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\Interfaces\IMailHelper.cs" />
+    <Compile Include="BLL\Interfaces\IOrderHelper.cs" />
+    <Compile Include="BLL\Interfaces\IUtilHelper.cs" />
+    <Compile Include="BLL\Interfaces\Security\IEncryptionHelper.cs" />
+    <Compile Include="BLL\Interfaces\Security\IQueryStringHelper.cs" />
+    <Compile Include="BLL\MailHelper.cs" />
+    <Compile Include="BLL\OrderHelper.cs" />
+    <Compile Include="BLL\Security\EncryptionHelper.cs" />
+    <Compile Include="BLL\Security\QueryStringHelper.cs" />
+    <Compile Include="BLL\UtilHelper.cs" />
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Conditions.aspx.cs">
+      <DependentUpon>Conditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Conditions.aspx.designer.cs">
+      <DependentUpon>Conditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CategoryData.cs" />
+    <Compile Include="DAL\Interfaces\ICategoryData.cs" />
+    <Compile Include="DAL\Interfaces\IOrderData.cs" />
+    <Compile Include="DAL\Interfaces\IProductData.cs" />
+    <Compile Include="DAL\Interfaces\ISettingsData.cs" />
+    <Compile Include="DAL\Interfaces\ITextBlockData.cs" />
+    <Compile Include="DAL\OrderData.cs" />
+    <Compile Include="DAL\ProductData.cs" />
+    <Compile Include="DAL\SettingsData.cs" />
+    <Compile Include="DAL\TextBlockData.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faq.aspx.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faq.aspx.designer.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GroupView.aspx.cs">
+      <DependentUpon>GroupView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupView.aspx.designer.cs">
+      <DependentUpon>GroupView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PrintInvoice.aspx.cs">
+      <DependentUpon>PrintInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintInvoice.aspx.designer.cs">
+      <DependentUpon>PrintInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="temp\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temp\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="temp\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temp\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="temp\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temp\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="temp\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temp\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="temp\WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="temp\WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UnauthorizedAccess.aspx.cs">
+      <DependentUpon>UnauthorizedAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnauthorizedAccess.aspx.designer.cs">
+      <DependentUpon>UnauthorizedAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CookieManager.ascx.cs">
+      <DependentUpon>CookieManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CookieManager.ascx.designer.cs">
+      <DependentUpon>CookieManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FileImageManager\BLL\FileHelper.cs" />
+    <Compile Include="UserControls\FileImageManager\DAL\DataProviders\CategoryDataProvider.cs" />
+    <Compile Include="UserControls\FileImageManager\DAL\FileData.cs" />
+    <Compile Include="UserControls\FileImageManager\ImageManager.ascx.cs">
+      <DependentUpon>ImageManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FileImageManager\ImageManager.ascx.designer.cs">
+      <DependentUpon>ImageManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FileImageManager\DAL\DataProviders\ProductDataProvider.cs" />
+    <Compile Include="UserControls\FileImageManager\DAL\Factory\ItemDataProviderFactory.cs" />
+    <Compile Include="UserControls\FileImageManager\DAL\DataProviders\IItemDataProvider.cs" />
+    <Compile Include="UserControls\UserManager\CreateUserWithRole.ascx.cs">
+      <DependentUpon>CreateUserWithRole.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserManager\CreateUserWithRole.ascx.designer.cs">
+      <DependentUpon>CreateUserWithRole.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserManager\ManageRoles.ascx.cs">
+      <DependentUpon>ManageRoles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserManager\ManageRoles.ascx.designer.cs">
+      <DependentUpon>ManageRoles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserManager\ManageUsers.ascx.cs">
+      <DependentUpon>ManageUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserManager\ManageUsers.ascx.designer.cs">
+      <DependentUpon>ManageUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserManager\UsersAndRoles.ascx.cs">
+      <DependentUpon>UsersAndRoles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserManager\UsersAndRoles.ascx.designer.cs">
+      <DependentUpon>UsersAndRoles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\Email.ascx.cs">
+      <DependentUpon>Email.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\Email.ascx.designer.cs">
+      <DependentUpon>Email.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\Name.ascx.cs">
+      <DependentUpon>Name.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\Name.ascx.designer.cs">
+      <DependentUpon>Name.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\Number.ascx.cs">
+      <DependentUpon>Number.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\Number.ascx.designer.cs">
+      <DependentUpon>Number.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\PhoneNumber.ascx.cs">
+      <DependentUpon>PhoneNumber.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\PhoneNumber.ascx.designer.cs">
+      <DependentUpon>PhoneNumber.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\PostalCode.ascx.cs">
+      <DependentUpon>PostalCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\PostalCode.ascx.designer.cs">
+      <DependentUpon>PostalCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\SSN.ascx.cs">
+      <DependentUpon>SSN.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\SSN.ascx.designer.cs">
+      <DependentUpon>SSN.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\StreetAddress.ascx.cs">
+      <DependentUpon>StreetAddress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\StreetAddress.ascx.designer.cs">
+      <DependentUpon>StreetAddress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\WebSiteURL.ascx.cs">
+      <DependentUpon>WebSiteURL.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\WebSiteURL.ascx.designer.cs">
+      <DependentUpon>WebSiteURL.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\Year.ascx.cs">
+      <DependentUpon>Year.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\Year.ascx.designer.cs">
+      <DependentUpon>Year.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Validation\YesNo.ascx.cs">
+      <DependentUpon>YesNo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Validation\YesNo.ascx.designer.cs">
+      <DependentUpon>YesNo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Standard\images\logo.PNG" />
+    <Content Include="App_Themes\Standard\images\main_flash.PNG" />
+    <Content Include="App_Themes\Standard\images\product1.jpg" />
+    <Content Include="App_Themes\Standard\images\Shopppingcart-16.png" />
+    <Content Include="App_Themes\Standard\main.css" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="temp\WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Admin\Category.aspx" />
+    <Content Include="Admin\CategoryImages\no_image.jpg" />
+    <Content Include="Admin\UserInformation.aspx" />
+    <Content Include="Admin\UserView.aspx" />
+    <Content Include="App_Themes\Standard\images\agt_print-32.png" />
+    <Content Include="App_Themes\Standard\images\Credit-card-Visa-48.png" />
+    <Content Include="App_Themes\Standard\images\dhl.gif" />
+    <Content Include="App_Themes\Standard\images\Paypal-folder-48.png" />
+    <Content Include="App_Themes\Standard\images\Posten_logo_50x50.gif" />
+    <Content Include="App_Themes\Standard\images\schenker.gif" />
+    <Content Include="App_Themes\Standard\images\Success-48.png" />
+    <Content Include="App_Themes\Standard\Printing.css" />
+    <Content Include="App_Themes\Standard\images\aboutus_button.PNG" />
+    <Content Include="App_Themes\Standard\images\arrow_up_32.png" />
+    <Content Include="App_Themes\Standard\images\contact_button.PNG" />
+    <Content Include="App_Themes\Standard\images\delivery_div.PNG" />
+    <Content Include="App_Themes\Standard\images\faq_button.PNG" />
+    <Content Include="App_Themes\Standard\images\home_button.png" />
+    <Content Include="App_Themes\Standard\images\latest_news.png" />
+    <Content Include="App_Themes\Standard\images\lates_products.PNG" />
+    <Content Include="App_Themes\Standard\images\lates_products2.PNG" />
+    <Content Include="App_Themes\Standard\images\Logo Template - Logo_34.png" />
+    <Content Include="App_Themes\Standard\images\Logo Template - Logo_79.png" />
+    <Content Include="App_Themes\Standard\images\logo_new.PNG" />
+    <Content Include="App_Themes\Standard\images\main_flash_B.PNG" />
+    <Content Include="App_Themes\Standard\images\member_button.PNG" />
+    <Content Include="App_Themes\Standard\images\news_div.PNG" />
+    <Content Include="App_Themes\Standard\images\other.png" />
+    <Content Include="App_Themes\Standard\images\product1.png" />
+    <Content Include="App_Themes\Standard\images\product1b.png" />
+    <Content Include="App_Themes\Standard\images\product2.PNG" />
+    <Content Include="App_Themes\Standard\images\product3.PNG" />
+    <Content Include="App_Themes\Standard\images\product4.png" />
+    <Content Include="App_Themes\Standard\images\product5.png" />
+    <Content Include="App_Themes\Standard\images\product6.PNG" />
+    <Content Include="App_Themes\Standard\images\product_categories.PNG" />
+    <Content Include="App_Themes\Standard\images\search_button.png" />
+    <Content Include="App_Themes\Standard\images\search_div.png" />
+    <Content Include="App_Themes\Standard\images\top_center_menu.png" />
+    <Content Include="App_Themes\Standard\images\top_left_menu.png" />
+    <Content Include="App_Themes\Standard\images\top_right_menu.png" />
+    <Content Include="App_Themes\Standard\images\visacard_div.PNG" />
+    <Content Include="App_Themes\Standard\main.skin" />
+    <Content Include="Checkout.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="GroupView.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Mail\Contact.htm" />
+    <Content Include="Mail\Order.htm" />
+    <Content Include="PrintInvoice.aspx" />
+    <Content Include="ProductImages\no_image.jpg" />
+    <Content Include="ProductView.aspx" />
+    <Content Include="scripts\jquery-1.4.2.js" />
+    <Content Include="scripts\jquery-1.4.2.min.js" />
+    <Content Include="scripts\UniqueRadioButtons.js" />
+    <Content Include="UnauthorizedAccess.aspx" />
+    <Content Include="UserControls\CookieManager.ascx" />
+    <Content Include="UserControls\FileImageManager\ImageManager.ascx" />
+    <Content Include="UserControls\FileImageManager\Images\Add Button-48.png" />
+    <Content Include="UserControls\FileImageManager\Images\Add-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Add-48.png" />
+    <Content Include="UserControls\FileImageManager\Images\Add-Category-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Add-Product-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Add-Product-48.png" />
+    <Content Include="UserControls\FileImageManager\Images\Add_Button-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Add_Photo-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Arrow-left-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Arrow-right-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Back-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Back-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\barcode-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\barcode-48.png" />
+    <Content Include="UserControls\FileImageManager\Images\Barcode-48b.png" />
+    <Content Include="UserControls\FileImageManager\Images\button_blue_first-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Cancel-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Cancel-Product-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Cancel-Product-48.png" />
+    <Content Include="UserControls\FileImageManager\Images\cancel_32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Closed_Folder-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Configure-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Configure-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Delete-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Delete-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\delete_16.png" />
+    <Content Include="UserControls\FileImageManager\Images\delete_32.png" />
+    <Content Include="UserControls\FileImageManager\Images\delete_item_32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Down-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Down-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Edit-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Edit-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Edit-48.png" />
+    <Content Include="UserControls\FileImageManager\Images\edit_32.png" />
+    <Content Include="UserControls\FileImageManager\Images\filesave-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\filesave-48.png" />
+    <Content Include="UserControls\FileImageManager\Images\Forward-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Forward-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\left_button_blue_play-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Minus-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Minus-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Misc-Box-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\new_32.png" />
+    <Content Include="UserControls\FileImageManager\Images\no_image.jpg" />
+    <Content Include="UserControls\FileImageManager\Images\Picture-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Plus-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Plus-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Product-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\return_32.PNG" />
+    <Content Include="UserControls\FileImageManager\Images\right_button_blue_play-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\save_32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Send-Mail-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\sub_black_delete-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Undo-32.png" />
+    <Content Include="UserControls\FileImageManager\Images\Up-16.png" />
+    <Content Include="UserControls\FileImageManager\Images\Up-32.png" />
+    <Content Include="UserControls\FileImageManager\TODO.txt" />
+    <Content Include="UserControls\UserManager\CreateUserWithRole.ascx" />
+    <Content Include="UserControls\UserManager\ManageRoles.ascx" />
+    <Content Include="UserControls\UserManager\ManageUsers.ascx" />
+    <Content Include="UserControls\UserManager\UsersAndRoles.ascx" />
+    <Content Include="UserControls\Validation\calendar_button.png" />
+    <Content Include="UserControls\Validation\Email.ascx" />
+    <Content Include="UserControls\Validation\Name.ascx" />
+    <Content Include="UserControls\Validation\Number.ascx" />
+    <Content Include="UserControls\Validation\PhoneNumber.ascx" />
+    <Content Include="UserControls\Validation\PostalCode.ascx" />
+    <Content Include="UserControls\Validation\SSN.ascx" />
+    <Content Include="UserControls\Validation\StreetAddress.ascx" />
+    <Content Include="UserControls\Validation\WebSiteURL.ascx" />
+    <Content Include="UserControls\Validation\Year.ascx" />
+    <Content Include="UserControls\Validation\YesNo.ascx" />
+    <Content Include="UserControls\WebForm1.aspx" />
+    <Content Include="Config\ConnectionStrings.config" />
+    <Content Include="Config\AppSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Admin\Web.config" />
+    <Content Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UserControls\FileImageManager\DAL\DataProviders\UMLClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\Printing\" />
+    <Folder Include="User\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16919</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
