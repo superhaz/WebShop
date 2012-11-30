@@ -83,7 +83,7 @@ a:active { color: #0000FF; }
 /* main container */
 #MasterPageContainer { background-color: White; width: 997px; margin: 10px auto 0px auto; border: solid 1px gray; border-bottom: dotted 1px #CCC; padding-bottom: 40px; }
 #MasterPageBottomContainer { background-color: White; width: 991px; margin: 0px auto 10px auto; text-align: center; border: solid 1px gray; border-top: solid 0px gray;  padding: 3px;}
-#LogoContainer { background-image: url('images/logo_new.png'); background-repeat: no-repeat; height: 101px; position: relative; border: solid 1px #CCC; }
+#LogoContainer { background-image: url('images/logo.png'); background-repeat: no-repeat; height: 101px; position: relative; border: solid 1px #CCC; }
 #SelectLanguage { float: left; margin-left: 15px; margin-top: 2px; border: solid 0px yellow; text-align: left; }
 
 .LoginShoppingCart { float: right; margin-right: 10px; margin-top: 10px; border: solid 0px yellow; text-align: right; font-size: 110%; color: white; }
