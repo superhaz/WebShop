@@ -6,6 +6,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using Ninject;
 using Ninject.Web;
+using Ninject.Web.Common;
 using WebShop.DAL.Interfaces;
 using WebShop.DAL;
 using WebShop.BLL.Security;

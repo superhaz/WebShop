@@ -618,7 +618,7 @@ namespace WebShop.UserControls.FileImageManager
                     // get filename
                     filename = Path.GetFileName(FileUpload1.FileName);
                     filename = EncodeFileName(filename);
-                     filename = FileHelper.FileNameWithoutExtension(filename) + ".jpg";
+                    filename = FileHelper.FileNameWithoutExtension(filename) + ".jpg";
                     // rename file if necessary
                     filename = FileHelper.GetUniqueFileName(filename);
                     // upload new file
@@ -728,10 +728,14 @@ namespace WebShop.UserControls.FileImageManager
                 _FileStream.Close();
                 return true;
             }
-            catch (Exception _Exception)
+            catch (Exception e)
             {
-                // Error  
-                Console.WriteLine("Exception caught in process: {0}", _Exception.ToString());
+                throw new Exception("exception was caught when writing filestream. Message: " +
+                    e.Message +
+                    "\nSource: " +
+                e.Source +
+                "\nStackTrace: " +
+                e.StackTrace);
             }
             fileSize = 0;
             // error occured, return false  

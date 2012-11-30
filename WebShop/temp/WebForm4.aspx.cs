@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -13,8 +14,16 @@ namespace WebShop.temp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ProductDataProvider pdp = new ProductDataProvider();
-            DataTable table = pdp.GetFileByItemIDANDPriority("96", null);
+            
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string filename = Path.GetFileName(FileUpload1.FileName);
+            filename = Server.MapPath(filename);
+            FileUpload1.SaveAs(filename);
+        }
+
+        
     }
 }

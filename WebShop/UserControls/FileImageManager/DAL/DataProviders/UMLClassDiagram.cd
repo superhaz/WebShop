@@ -6,7 +6,7 @@
   <Class Name="WebShop.UserControls.FileImageManager.DAL.DataProviders.ProductDataProvider">
     <Position X="7.75" Y="0.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAggAAgAAAAgACAAAAAAAAAggBCAAABAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAggAAgAAAAgACAAAAAAAAAggJCAAABAAAAAAAAA=</HashCode>
       <FileName>UserControls\FileImageManager\DAL\DataProviders\ProductDataProvider.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -21,7 +21,7 @@
   <Class Name="WebShop.UserControls.FileImageManager.BLL.FileHelper" Collapsed="true">
     <Position X="4" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEQBBABIAAAAACKAAABAgAAAAAAAAIAAECAQAAgAk=</HashCode>
+      <HashCode>AAAGQBBABIAAAAGCKAAABAgAAAAAAAAIAAECAQAAgAk=</HashCode>
       <FileName>UserControls\FileImageManager\BLL\FileHelper.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -36,7 +36,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>BVFCAB1AAYQkQAAkiAAAKEEQMAMIhEgBAEQkCAI6Mgg=</HashCode>
+      <HashCode>BVFCBB1AAYUkQAAkigAAKEWQMAMIhEgBAEQkCAI6Mgg=</HashCode>
       <FileName>UserControls\FileImageManager\ImageManager.ascx.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -50,10 +50,18 @@
       <FileName>UserControls\FileImageManager\DAL\Factory\ItemDataProviderFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="WebShop.UserControls.FileImageManager.DAL.DataProviders.CategoryDataProvider">
+    <Position X="10.75" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAggAAgAAAAgACAAAAAAAAAggJCAAABAAAAAAAAA=</HashCode>
+      <FileName>UserControls\FileImageManager\DAL\DataProviders\CategoryDataProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Interface Name="WebShop.UserControls.FileImageManager.DAL.DataProviders.IItemDataProvider" Collapsed="true">
     <Position X="4" Y="1.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAggAAgAAAAAACAAAAAAAAAggBCAAABAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAggAAgAAAAAACAAAAAAAAAggJCAAABAAAAAAAAA=</HashCode>
       <FileName>UserControls\FileImageManager\DAL\DataProviders\IItemDataProvider.cs</FileName>
     </TypeIdentifier>
   </Interface>
