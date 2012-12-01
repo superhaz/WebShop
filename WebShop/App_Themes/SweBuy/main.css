@@ -1,0 +1,280 @@
+﻿/* From Blueprint reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+body { line-height: 1.5; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+
+/* From Blueprint typography.css */
+body { font-size: 65%; font-family: "Helvetica Neue" ,Verdana, Arial,  Helvetica, sans-serif; background-repeat: repeat; background-color: #CCC; color: Gray; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: Black; }
+h1 { font-size: 1.5em; line-height: 1; font-weight: bold; margin-bottom: 0.5em; }
+h2 { font-size: 1.2em; line-height: 1; font-weight: bold; margin-bottom: 0.5em;  }
+h3 { font-size: 1.0em; line-height: 1; font-weight: bold; margin-bottom: 0.5em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1.1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 0.9em; font-weight: bold; }
+
+h2.Title { padding: 10px 0px 0px 2px; }
+
+.GreenText { color: Green; font-weight: bolder;}
+.RedText { color: Red;}
+.WhiteBold { color: white;font-weight: bolder; }
+
+p { margin: 0 0 10px 0; border: solid 0px white; }
+
+.ErrorMessage { color: Red; font-weight: bold;  }
+
+.Margin { margin-top: 1px; margin-left: 0px; margin-right: 5px; margin-bottom: 5px; }
+.Padding { padding: 10px 10px 10px 10px; }
+
+/* for making image vertical-align middle */
+.MiddleDiv {display:table;}
+.MiddleImage {display:table-cell; vertical-align:middle;}
+.Div { width: 100%; float: left; vertical-align: middle; margin: 0 auto; padding-bottom: 10px; }
+.DottedDiv { border: dotted 1px #CCC; }
+.SolidDiv { border: solid 1px #CCC; }
+.Line { height: 10px; width: 100%; border-top: 1px solid #aaaaaa; margin-top: 10px; }
+.DottedLine { height: 10px; width: 100%; border-top: 1px dotted #ccc; margin-top: 10px; }
+
+.IconText { vertical-align: middle; }
+.TinyButton { background: #333 url(Images/buttons.png) repeat-x scroll center 0px; border: outset 1px #b0b0b0; color: #000000; font-size: 0.8em; }
+
+.LeftAlignColumn { float: left; text-align: left; }
+.RightAlignColumn { float: left; text-align: right; }
+.CenterAlignColumn { float: left;  text-align: center; }
+
+table.Listing th { padding: 5px;  }
+table.Listing td { padding: 5px; }
+th.RightAlignTH { text-align: right; }
+td.RightAlignTD { text-align: right;  }
+th.CenterAlignTH { text-align: center; }
+td.CenterAlignTD { text-align: center;  }
+
+table.ListingWithBorder th { padding: 5px;  }
+table.ListingWithBorder td { padding: 5px; border: solid #CCC 1px; }
+
+
+a.White { color: White;}
+a { color: Gray;}
+a.Underline { text-decoration: underline; }
+a.Title { font-size: 12px; font-weight: bold;}
+
+/* Other styles
+ul, ol { margin: 0 0 15px 20px; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* TO BE TWEAKED 
+a:link { color: Blue; }
+a:visited { color: #0000dd; }
+a:active { color: #0000FF; }
+/* selected link */
+
+/** Login **/
+.LoginSections { border: 1px solid #cccccc; padding: 10px; margin-bottom: 10px; height: 200px; }
+.LineLogin { height: 10px; width: 180px; border-top: 1px solid #aaaaaa; margin: 0 auto; }
+.LoginTitle { float: left; vertical-align: middle; margin-left: 0px; margin-top: 0px; }
+.LoginLogo { height: 100px; position: relative; padding-bottom: 40px; }
+/** End Login **/
+
+/* main container */
+#MasterPageContainer { background-color: White; width: 997px; margin: 10px auto 0px auto; border: solid 1px gray; border-bottom: dotted 1px #CCC; padding-bottom: 40px; }
+#MasterPageBottomContainer { background-color: White; width: 991px; margin: 0px auto 10px auto; text-align: center; border: solid 1px gray; border-top: solid 0px gray;  padding: 3px;}
+#LogoContainer { background-image: url('images/logo.png'); background-repeat: no-repeat; height: 101px; position: relative; border: solid 1px #CCC; }
+#SelectLanguage { float: left; margin-left: 15px; margin-top: 2px; border: solid 0px yellow; text-align: left; }
+
+.LoginShoppingCart { float: right; margin-right: 10px; margin-top: 10px; border: solid 0px yellow; text-align: right; font-size: 110%; color: white; }
+
+#TopMenuContainer { width: 997px; background-color: White; }
+#TopLeftMenu { height: 41px; float: left; width: 327px; margin: 0px 0px 0px 0px; background-image: url('images/top_left_menu.png'); background-repeat: no-repeat; border: solid 0px black; }
+#TopCenterMenu { height: 41px; float: left; width: 327px; margin: 0px 8px; background-image: url('images/top_center_menu.png'); background-repeat: no-repeat; border: solid 0px black; }
+#TopRightMenu { height: 41px; float: left; width: 327px; margin: 0px auto; background-image: url('images/top_right_menu.png'); background-repeat: no-repeat; border: solid 0px black; }
+
+#LeftMenuContainer { float: left; width: 122px; padding-top: 7px; padding-left: 3px; padding-right: 4px; border: solid 0px blue; background-color: White; } 
+.LeftSide { background-repeat: no-repeat; border: solid 0px #CCC; padding-top: 33px; padding-left: 7px; padding-bottom: 7px; }
+.Categories { background-image: url('images/product_categories.png'); border: solid 1px #CCC; padding-bottom: 0px; margin-bottom: 5px; }
+.Search { height: 55px; background-image: url('images/search_div.png'); border: solid 1px #CCC; margin-bottom: 5px; }
+.SearchButton { width: 105px; height: 22px; border: solid 0px #CCC; background-repeat: no-repeat; background-image: url('images/search_button.png'); border: solid 1px #CCC; }
+
+/* beginning of Left menu buttons */
+#LeftMenuButtons { background-color: White; border: solid 1px #CCC; padding-bottom: 7px; padding-top: 7px; margin-bottom: 5px; }
+.MenuButton { height: 22px; border: solid 0px #CCC; background-repeat: no-repeat; border: solid 1px #CCC; }
+.Home
+{
+    background-image: url('images/home_button.png');
+}
+
+.Register
+{
+    background-image: url('images/member_button.png');
+}
+
+.Contact
+{
+    background-image: url('images/contact_button.png');
+}
+
+.Faq
+{
+    background-image: url('images/faq_button.png');
+}
+
+.AboutUs
+{
+    background-image: url('images/aboutus_button.png');
+}
+
+.EndMenuButton
+{
+    
+    height: 3px;
+    border-bottom: solid 0px #CCC;
+    background-repeat: no-repeat;
+    
+}
+
+/* end of Left menu buttons */
+
+#LeftMenuBillingService
+{
+    height: 165px;
+    background-image: url('images/visacard_div.png');
+    background-repeat: no-repeat;
+    border: solid 1px #CCC;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+}
+
+#LeftMenuDeliveryService
+{
+    height: 139px;
+    background-image: url('images/delivery_div.png');
+    background-repeat: no-repeat;
+    border: solid 1px #CCC;
+    padding-left: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+}
+
+#MainContainer
+{
+    padding-top: 5px; 
+    float: left;
+    width: 662px;
+	margin: 0px auto;
+}
+
+.MainLatestProducts
+{
+    background-repeat: no-repeat;
+    border: solid 0px #CCC;
+    padding-top: 35px;
+    background-image: url('images/latest_news.png');
+    float: left;
+}
+
+.ProductInList
+{
+    width: 203.5px;
+    border: solid 1px #CCC;
+    float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    
+}
+
+.ProductInListImage
+{
+    padding-bottom: 5px;
+}
+
+.ProductInListText
+{
+    padding-bottom: 10px;
+    height: 65px;
+}
+
+.ListItem
+{
+    float: left;
+    border: dotted 1px #CCC;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.ImageItem
+{
+    border: dotted 0px #CCC;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+
+#RightAdvertiseContainer
+{
+    float: left;
+    width: 200px; 
+    padding-top: 5px; 
+    padding-left: 0px; 
+    border: solid 0px blue;
+}
+
+.RightSide
+{
+    background-repeat: no-repeat;
+    border: solid 0px #CCC;
+    padding-top: 33px;
+    padding-left: 10px;
+}
+
+.NewsText
+{
+    background-image: url('images/news_div.png');
+    border: solid 1px #CCC;
+    margin-bottom: 5px;
+}
+
+.NewsButton
+{
+    background-repeat: no-repeat;
+}
+
+.Advertise1
+{
+    background-image: url('images/lates_products.PNG');
+    border: solid 1px #CCC;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.OtherText
+{
+    background-image: url('images/other.png');
+    border: solid 1px #CCC;
+    margin-bottom: 5px;
+}
+
+.DropDownList
+{
+    color: gray; font-size: xx-small; 
+        /*BORDER-RIGHT: #666666 1px solid; background-color: #FFFFFF; BORDER-TOP: #666666 1px solid; FONT-SIZE: 9px; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif*/
+}
+
+#DiscreteText
+{
+    font-size: font-family: Arial, Verdana, "Helvetica Neue" , Helvetica, sans-serif;color: gray; 
+}
+
+
+
+
+
