@@ -619,6 +619,8 @@
     <Content Include="Admin\Web.config" />
     <Content Include="packages.config" />
     <Content Include="App_Themes\SweBuy\main.skin" />
+    <Content Include="App_Browsers\firefox.browser" />
+    <Content Include="App_Browsers\ie.browser" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
