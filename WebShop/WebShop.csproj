@@ -126,6 +126,7 @@
     <Content Include="App_Themes\SweBuy\images\images for change\visacard_div.PNG" />
     <Content Include="App_Themes\SweBuy\images\Invoice-48.png" />
     <Content Include="App_Themes\SweBuy\images\latest_news.png" />
+    <Content Include="App_Themes\SweBuy\images\lates_products.PNG" />
     <Content Include="App_Themes\SweBuy\images\logo.PNG" />
     <Content Include="App_Themes\SweBuy\images\news_div.PNG" />
     <Content Include="App_Themes\SweBuy\images\Paypal-folder-48.png" />
